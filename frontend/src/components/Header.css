@@ -1,0 +1,115 @@
+/* Overall container */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 4rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  color: #fff;
+}
+
+.background {
+  background: linear-gradient(90deg, #2563eb, #d946ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+}
+
+/* Left section */
+.header-content {
+  flex: 1;
+}
+
+/* Title */
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1280px) {
+  .header-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Description */
+.header-desc {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: #e5e7eb;
+}
+
+/* Hide line break on small screens */
+.hide-md {
+  display: inline;
+}
+@media (max-width: 768px) {
+  .hide-md {
+    display: none;
+  }
+}
+
+/* Upload button wrapper */
+.upload-box {
+  margin-top: 1rem;
+}
+
+/* Upload button */
+.upload-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.85rem 2.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #d946ef);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.upload-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Right section */
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image */
+.header-image {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 1rem;
+  cursor: pointer;
+  object-fit: cover;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease;
+}
+
+.header-image:hover {
+  transform: scale(1.03);
+}

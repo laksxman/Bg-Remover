@@ -1,0 +1,62 @@
+/* Container */
+.step-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #09162e; /* Dark background */
+  color: white;
+}
+
+.step-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #ffffff;
+}
+
+/* Cards layout */
+.step-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  background: #111827; 
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* Icon */
+.step-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #3b82f6; 
+  margin-bottom: 1rem;
+}
+
+/* Headings */
+.step-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #f9fafb;
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}

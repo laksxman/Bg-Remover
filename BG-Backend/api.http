@@ -1,0 +1,33 @@
+### Register a new user
+POST http://localhost:4000/api/users/register
+Content-Type: application/json
+
+{
+  "username": "Lakshmana Kumar",
+  "email": "lakshman1@example.com",
+  "password": "mySecret123"
+}
+
+
+### login a new user
+POST http://localhost:4000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "lakshman1@example.com",
+  "password": "mySecret123"
+}
+
+
+### Test Remove Background API
+POST http://localhost:4000/api/images/remove-bg
+Content-Type: multipart/form-data
+
+# 'image' is the key for the uploaded file
+# Replace `path/to/your/image.jpg` with an actual image path on your machine
+# --boundary
+# Content-Disposition: form-data; name="image"; filename="image.jpg"
+# Content-Type: image/jpeg
+
+
+

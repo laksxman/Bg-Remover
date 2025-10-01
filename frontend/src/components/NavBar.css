@@ -1,0 +1,74 @@
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  color: white;
+}
+
+/* Logo Text */
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #d946ef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.logo-text span {
+  color: #fff;
+}
+
+.logo-text:hover {
+  transform: scale(1.1);
+}
+
+
+/* Logo */
+.navbar-logo {
+  width: 9rem; 
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  .navbar-logo {
+    width: 12rem; 
+  }
+}
+
+/* Right Side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Login Button */
+.login-btn {
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem; 
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #2563eb, #d946ef);
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
